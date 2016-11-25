@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the BPS - Views - Article feature.
+ */
+
+include_once 'bps_views_article.features.inc';

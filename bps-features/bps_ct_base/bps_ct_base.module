@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the BPS - CT - base feature.
+ */
+
+include_once 'bps_ct_base.features.inc';
