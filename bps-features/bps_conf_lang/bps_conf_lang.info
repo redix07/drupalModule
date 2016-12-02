@@ -1,0 +1,12 @@
+name = BPS - conf - lang
+core = 7.x
+package = bps
+version = 7.x-1.2
+dependencies[] = features
+dependencies[] = locale
+dependencies[] = menu
+dependencies[] = metatag_hreflang
+features[features_api][] = api:2
+features[language][] = en
+features[language][] = pl
+features[menu_custom][] = management

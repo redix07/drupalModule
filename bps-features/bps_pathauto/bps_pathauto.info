@@ -1,10 +1,12 @@
 name = BPS - pathauto
 core = 7.x
 package = bps
-version = 7.x-1.0
+version = 7.x-1.1
 dependencies[] = base_page_setup
+dependencies[] = features
 dependencies[] = path
 dependencies[] = pathauto
 dependencies[] = transliteration
-dependencies[] = transliteration
 features[features_api][] = api:2
+features[user_permission][] = administer url aliases
+features[user_permission][] = create url aliases
