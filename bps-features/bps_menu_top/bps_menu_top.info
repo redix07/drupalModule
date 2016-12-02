@@ -1,7 +1,7 @@
-name = BPS - menu - top
+name = BPS - Menu - top
 core = 7.x
 package = bps
-version = 7.x-1.0
+version = 7.x-1.1
 dependencies[] = bps_conf_lang
 dependencies[] = features
 dependencies[] = menu
@@ -9,4 +9,5 @@ features[features_api][] = api:2
 features[menu_custom][] = main-menu
 features[menu_links][] = main-menu_home:<front>
 features[menu_links][] = management_main-menu:admin/structure/menu/manage/main-menu
-features[menu_links][] = management_maintenance-mode:admin/config/development/maintenance
+features_exclude[menu_links][main-menu_articles:article] = main-menu_articles:article
+features_exclude[menu_links][main-menu_kontakt:node/17] = main-menu_kontakt:node/17

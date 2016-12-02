@@ -24,8 +24,8 @@ function bps_menu_top_menu_default_menu_links() {
     'external' => 1,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
-    'customized' => 0,
+    'weight' => -50,
+    'customized' => 1,
   );
   // Exported menu link: management_main-menu:admin/structure/menu/manage/main-menu.
   $menu_links['management_main-menu:admin/structure/menu/manage/main-menu'] = array(
@@ -45,33 +45,11 @@ function bps_menu_top_menu_default_menu_links() {
     'customized' => 0,
     'parent_identifier' => 'management_menus:admin/structure/menu',
   );
-  // Exported menu link: management_maintenance-mode:admin/config/development/maintenance.
-  $menu_links['management_maintenance-mode:admin/config/development/maintenance'] = array(
-    'menu_name' => 'management',
-    'link_path' => 'admin/config/development/maintenance',
-    'router_path' => 'admin/config/development/maintenance',
-    'link_title' => 'Maintenance mode',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Take the site offline for maintenance or bring it back online.',
-      ),
-      'identifier' => 'management_maintenance-mode:admin/config/development/maintenance',
-    ),
-    'module' => 'system',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -10,
-    'customized' => 0,
-    'parent_identifier' => 'management_development:admin/config/development',
-  );
 
   // Translatables
   // Included for use with string extractors like potx.
   t('Home');
   t('Main menu');
-  t('Maintenance mode');
 
   return $menu_links;
 }
