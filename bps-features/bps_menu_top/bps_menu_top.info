@@ -1,0 +1,12 @@
+name = BPS - menu - top
+core = 7.x
+package = bps
+version = 7.x-1.0
+dependencies[] = bps_conf_lang
+dependencies[] = features
+dependencies[] = menu
+features[features_api][] = api:2
+features[menu_custom][] = main-menu
+features[menu_links][] = main-menu_home:<front>
+features[menu_links][] = management_main-menu:admin/structure/menu/manage/main-menu
+features[menu_links][] = management_maintenance-mode:admin/config/development/maintenance
